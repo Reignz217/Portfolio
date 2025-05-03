@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Router>
-      <div className='flex flex-col bg-[#222831] h-screen md:p-8 p-2 min-w-sm'>
+      <div className='flex flex-col bg-[#222831] h-screen md:p-8 p-4 min-w-sm'>
         <Header/>
         <div className='flex-1 w-full bg-[#393E46] text-white overflow-y-auto py-5'>
               <Routes>
