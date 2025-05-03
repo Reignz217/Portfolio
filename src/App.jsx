@@ -11,9 +11,9 @@ function App() {
 
   return (
     <Router>
-      <div className='flex flex-col bg-[#222831] h-screen p-8 min-w-lg'>
+      <div className='flex flex-col bg-[#222831] h-screen p-8'>
         <Header/>
-        <div className='flex-1 w-full bg-[#393E46] text-white overflow-auto py-5'>
+        <div className='flex-1 w-full bg-[#393E46] text-white overflow-y-auto py-5'>
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />

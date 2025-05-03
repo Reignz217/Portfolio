@@ -28,7 +28,7 @@ export default function Home(){
 
     return(
         <>
-            <div className="mb-10">
+            <div className="mb-10 h-full">
                 <div className="lg:flex md:my-10">
                     <div className="lg:w-1/2 flex flex-col justify-center items-center text-center p-10">
                         <h2 className="xl:text-6xl text-4xl">Hi, <br/>I'm Renz Harvey J. Sunico</h2>
