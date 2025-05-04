@@ -29,10 +29,10 @@ export default function Home(){
     return(
         <>
             <div className="mb-10">
-                <div className="lg:flex md:my-10">
+                <div className="lg:flex md:my-10 home" id='home'>
                     <div className="lg:w-1/2 flex flex-col justify-center items-center text-center md:p-10 p-5">
-                        <h2 className="xl:text-6xl text-xl">Hi, <br/>I'm Renz Harvey J. Sunico</h2>
-                        <p className="xl:text-3xl text-[12px] text-gray-500 desc">Web Developer | Problem Solver</p>
+                        <h2 className="xl:text-6xl md:text-3xl text-xl">Hi, <br/>I'm Renz Harvey J. Sunico</h2>
+                        <p className="xl:text-3xl md:text-xl text-[12px] text-gray-500 desc">Web Developer | Problem Solver</p>
                     </div>
                     <div className="lg:w-1/2  flex justify-center xl:h-180">
                         <img className="p-5 aspect-square" src={Profile} alt="Profile of Renz Harvey J. Sunico"/>

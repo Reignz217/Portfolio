@@ -3,7 +3,7 @@ import Profile from '../assets/Profile.jpg';
 export default function About() {
     return(
         <>
-            <div className="lg:w-3/4 m-auto flex flex-col lg:flex-row md:px-10 p-5 gap-5 items-center justify-center">
+            <div className="lg:w-3/4 m-auto flex flex-col lg:flex-row md:px-10 px-5 gap-5 items-center justify-center">
                 <div className="lg:w-1/2 md:px-10 lg:p-0">
                     <img src={Profile} className='aspect-square'/>
                 </div>
@@ -16,7 +16,7 @@ export default function About() {
                         who enjoys crafting beautiful,
                         responsive websites.
                     </p>
-                    <ul className="flex flex-col gap-5 md:pl-10 list-disc text-sm md:text-xl">
+                    <ul className="flex flex-col gap-5 pl-5 md:pl-10 list-disc text-sm md:text-xl">
                         <li>Based in Iloilo, Philippines</li>
                         <li>Focused on Front-End</li>
                         <li>Open to freelance or internship work</li>

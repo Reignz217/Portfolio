@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className='flex flex-col bg-[#222831] h-screen md:p-8 p-4 min-w-[320]'>
         <Header/>
-        <div className='flex-1 w-full bg-[#393E46] text-white overflow-y-auto py-5'>
+        <div className='flex-1 w-full bg-[#393E46] text-white overflow-y-auto'>
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
