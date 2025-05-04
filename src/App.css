@@ -27,17 +27,16 @@ body {
 
 /* typing animation for description */
 .desc {
-  animation: typing 2.5s steps(20) infinite;
+  animation: typing 2.5s steps(22) infinite;
   border-right: 5px solid;
   white-space: nowrap;
   overflow: hidden;
-  
 }
 @keyframes typing {
   0%   {
-    width: 0;
+    width: 0%;
   }
-  50%  {
+  50% {
     width: 50%;
   }
 }
