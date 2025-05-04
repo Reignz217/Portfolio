@@ -4,7 +4,7 @@ import Proj2 from '../assets/Proj2.png'
 export default function Projects(){
     return(
         <>
-        <h5 className="lg:text-5xl text-3xl font-bold text-center my-5 text-[#00ADB5]">Projects I've Worked On</h5>
+        <h5 className="lg:text-5xl text-3xl font-bold text-center mb-5 text-[#00ADB5]">Projects I've Worked On</h5>
         <div className="lg:grid grid-cols-2 gap-5 md:px-20 px-5 text-center">
             <div className="mb-10">
                 <img src={Proj1} className="hover:scale-103 transition-all duration-300 ease-in-out mb-5"/>

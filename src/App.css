@@ -7,8 +7,43 @@ body {
   margin: 0;
   padding: 0;
 }
+/* animation for scroll */
+.show {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+    scale: 0.5;
+  }
+}
+/* END */
 
+/* typing animation for description */
+.desc {
+  animation: typing 2.5s steps(20) infinite;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+@keyframes typing {
+  0%   {
+    width: 0;
+  }
+  50%  {
+    width: 50%;
+  }
+}
+/* END */
 
+/* Submit Button */
 .button {
     border-radius: 50px;
     cursor: pointer;
@@ -36,11 +71,9 @@ body {
     transform: translateY(10px);
     transition: 200ms;
   }
+/* END */
 
-  .projects:hover {
-    box-shadow: rgb(3, 34, 119) 0px 7px 29px 0px;
-  }
-
+/* Navigation Button */
   .view:hover {
     letter-spacing: 3px;
     background-color: rgb(3, 34, 119);
@@ -55,3 +88,4 @@ body {
     transform: translateY(10px);
     transition: 200ms;
   }
+/* END */

@@ -32,7 +32,7 @@ export default function Home(){
                 <div className="lg:flex md:my-10">
                     <div className="lg:w-1/2 flex flex-col justify-center items-center text-center p-10">
                         <h2 className="xl:text-6xl text-4xl">Hi, <br/>I'm Renz Harvey J. Sunico</h2>
-                        <p className="xl:text-3xl text-xl text-gray-500 mt-5 mb-10">Web Developer | Problem Solver</p>
+                        <p className="xl:text-3xl text-xl text-gray-500 mt-5 mb-10 desc">Web Developer | Problem Solver</p>
                     </div>
                     <div className="lg:w-1/2  flex justify-center xl:h-180">
                         <img className="p-5 aspect-square" src={Profile} alt="Profile of Renz Harvey J. Sunico"/>
@@ -40,21 +40,22 @@ export default function Home(){
                 </div>
                 {/* About Section */}
                 <div className="md:px-20 px-10 flex flex-col justify-center w-full gap-10 text-center">
-                    <section>
+                    <section className='show'>
                         <h5 className="text-3xl font-bold my-5">About Me</h5>
                             <p className="text-xl text-gray-400"> I'm a Web Developer with a passion for creating beautiful and functional web experiences. 
                             With experience in both design and development, I strive to deliver high-quality solutions that meet and exceed expectations.
                             </p>
                     </section>
-
+                
                 {/* Skills Section */}
-                    <section className="my-10 px-10 text-center">
+                    <section className="my-10 px-10 text-center show">
                         <h5 className="text-3xl font-bold mb-5">Skills</h5>
-                        <div className="flex flex-wrap justify-center gap-4">
+                        <div className="flex flex-wrap justify-center gap-4 loop">
                             {skills.map((item)=> (
                             <span
                                 key={item.label}
-                                className="bg-gray-200 flex gap-2 items-center text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:bg-[#00ADB5] hover:scale-110 hover:text-white transition"
+                                className="bg-gray-200 flex gap-2 items-center text-gray-700 px-4 py-2 rounded-full text-sm font-medium 
+                                shadow-sm hover:bg-[#00ADB5] hover:scale-110 hover:text-white"
                             >
                                 {item.icon}{item.label}
                             </span>
@@ -63,7 +64,7 @@ export default function Home(){
                     </section>
 
                 {/* Projects Section */}
-                    <section>
+                    <section className='show'>
                         <h5 className="text-3xl lg:text-4xl font-bold my-5">Projects I've Worked On</h5>
                             <div className="grid lg:grid-cols-2 gap-5 text-center lg:w-1/2 mx-auto">
                                 <div className="flex flex-col items-center">
