@@ -28,19 +28,24 @@ body {
 
 /* typing animation for description */
 .desc {
-  animation: typing 2.5s steps(22) infinite;
-  border-right: 5px solid;
   white-space: nowrap;
   overflow: hidden;
+  border-right: 3px solid;
+  width: 0;
+  animation: typing 5s steps(30, end) infinite, blink 0.75s step-end infinite;
 }
+
 @keyframes typing {
-  0%   {
-    width: 0%;
-  }
-  50% {
-    width: 50%;
-  }
+  0%   { width: 0 }
+  80%  { width: 27ch } /* Typing finishes */
+  100% { width: 27ch } /* Hold the last frame */
 }
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
 /* END */
 
 /* Submit Button */
